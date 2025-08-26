@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+body {
+    background: radial-gradient(circle, rgb(155, 187, 235) 30%, rgb(129, 168, 228) 90%);
+    color: #e6f1ff;
+    overflow-x: hidden;
+
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    background: rgba(23, 22, 22, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    height: 60px;
+}
+
+.navbar-nav ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav {
+    transition: all 0.3s ease-in;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.navbar-nav a:hover {
+    color: rgba(87, 174, 255, 0.418);
+    border-color: #e6f1ff;
+}
+form{
+    background-color: #e6f1ff;
+    display: block;
+    margin-top: 200px;
+    width: 1000px;
+    justify-self: center;
+    border-radius: 15px;
+    height: fit-content;
+    padding: 30px;
+    box-shadow: rgb(25, 32, 48);
+}
+h1{
+    color: blue;
+    align-self: center;
+    text-align: center;
+    top: 300px;
+}
+h3{
+    color: darkblue;
+    text-align: left;
+}
