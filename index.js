@@ -5,12 +5,25 @@ document.addEventListener('DOMContentLoaded', function() {
     const ageInput = document.getElementById('genreInput');
     const tableData = document.getElementById('tableData');
 
+    let editingRow = null;
+
     dataForm.addEventListener('submit', function(event) {
         event.preventDefault();
 
         const title = titleInput.value;
         const genre = genreInput.value;
         const newRow = document.createElement('tr');
+
+        if (editingRow) {
+            // Update baris yang sedang diedit
+            editingRow.children[0].textContent = title;
+            editingRow.children[1].textContent = genre;
+
+            // Reset editing state dan form
+            editingRow = null;}
+            else {
+
+            
 
         const titleCell = document.createElement('td');
         titleCell.textContent = title;
@@ -22,16 +35,17 @@ document.addEventListener('DOMContentLoaded', function() {
         btnEdit.textContent = "Edit";
         btnEdit.classList.add("btnEdit");
         btnEdit.addEventListener("click", function () {
-            titleInput.value = title;
-            genreInput.value = genre;
-            itemEdit = td;
+            titleInput.value = titleCell.textContent;
+            genreInput.value = genreCell.textContent;
+            editingRow = newRow;
         });
 
         const btnDelete = document.createElement("button");
         btnDelete.textContent = "Delete";
         btnDelete.classList.add("btnDelete");
         btnDelete.addEventListener("click", function () {
-            newRow.remove();
+
+            newRow.remove()
         });
 
         const optionCell = document.createElement('td');
@@ -46,5 +60,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
         titleInput.value = '';
         genreInput.value = '';
-    }
+    }}
     )});

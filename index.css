@@ -53,12 +53,12 @@ nav {
 }
 
 .navbar-nav a:hover {
-    color: rgba(87, 174, 255, 0.418);
+    color: #57aeff6b;
     border-color: #e6f1ff;
 }.input, form{
     background-color: #e6f1ff;
     display: block;
-    margin-top: 200px;
+    margin-top: 30px;
     width: 1000px;
     justify-self: center;
     border-radius: 15px;
@@ -92,8 +92,9 @@ h1{
     color: blue;
     align-self: center;
     text-align: center;
-    top: 300px;
+    margin: 20px;
 }
+
 h3{
     color: darkblue;
     text-align: left;
