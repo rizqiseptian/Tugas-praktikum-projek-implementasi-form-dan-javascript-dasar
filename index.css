@@ -17,7 +17,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 2rem;
-    background: rgba(23, 22, 22, 0.8);
+    background: #171616cc;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -55,8 +55,7 @@ nav {
 .navbar-nav a:hover {
     color: rgba(87, 174, 255, 0.418);
     border-color: #e6f1ff;
-}
-form{
+}.input, form{
     background-color: #e6f1ff;
     display: block;
     margin-top: 200px;
@@ -67,6 +66,28 @@ form{
     padding: 30px;
     box-shadow: rgb(25, 32, 48);
 }
+.kontak{
+    border: none;
+    text-decoration: none;
+    background-color: blue;
+    display: inline-block;
+    color: rgb(253, 253, 253);
+    border-radius: 15px;
+    padding: 7px;
+}
+.add{
+    border-radius: 15px;
+    background-color: rgb(40, 90, 230);
+    color: white;
+    border: none;
+    padding: 8px;
+}
+.add:hover{
+    color: white;
+    background-color: blue;
+    transform: scale(1.2);
+    transition: 0.2s ease-in-out;
+}
 h1{
     color: blue;
     align-self: center;
@@ -76,4 +97,36 @@ h1{
 h3{
     color: darkblue;
     text-align: left;
+    margin: 5px;
+}
+.display{
+    background-color: #e6f1ff;
+    display: block;
+    margin-top: 20px;
+    width: 1000px;
+    justify-self: center;
+    border-radius: 15px;
+    height: fit-content;
+    padding: 30px;
+    box-shadow: rgb(25, 32, 48);
+}
+table{
+    background-color: aliceblue;
+    width: 900px;
+    border-collapse: collapse;
+    justify-self: center;
+    margin: 40px;
+    border: blue;
+    color: blue;
+    padding: 10px;
+}
+tr, td, th{
+    width: auto;
+    padding: 10px;
+}
+button{
+    cursor: pointer;
+}
+label{
+    color: blue;
 }
