@@ -32,15 +32,21 @@ document.addEventListener('DOMContentLoaded', function() {
         genreCell.textContent = genre;
 
         const btnEdit = document.createElement("button");
+        btnEdit.classList.add("Edit")
         btnEdit.textContent = "Edit";
         btnEdit.classList.add("btnEdit");
         btnEdit.addEventListener("click", function () {
+            add.value = "Update List";
+            add.style.color = "black";
+            add.style.backgroundColor = "yellow";
+            add.textContent = "Update list"
             titleInput.value = titleCell.textContent;
             genreInput.value = genreCell.textContent;
             editingRow = newRow;
         });
 
         const btnDelete = document.createElement("button");
+        btnDelete.classList.add("Delete")
         btnDelete.textContent = "Delete";
         btnDelete.classList.add("btnDelete");
         btnDelete.addEventListener("click", function () {
